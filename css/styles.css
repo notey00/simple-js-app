@@ -1,0 +1,7 @@
+.button-class {
+    /* border-style: dotted; */
+    border: solid, 10px;
+    padding: 10px;
+    background-color: aquamarine;
+    margin: 10px;
+}
