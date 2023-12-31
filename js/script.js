@@ -5,6 +5,10 @@ let pokemonRepository = (function (){
     {name: 'Butterfree', height: 1, type: ['bug', 'flying']} //POKEMON/OBJECT3
 ]
     
+    function showDetails(pokemon){
+        console.log(pokemon);
+    }
+
     function addListItem(pokemon){
         let pokeList = document.querySelector('.pokeList');
         let listItem = document.createElement('li');
@@ -13,6 +17,7 @@ let pokemonRepository = (function (){
         button.classList.add('button-class');
         listItem.appendChild(button);
         pokeList.appendChild(listItem);
+        button.addEventListener('click', () => showDetails(pokemon));
 }
 
     function add(pokemon){
